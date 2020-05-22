@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .title {
+  text-align: center;
+}
+
+.separadores {
+  display: flex;
+}
+
+.separadores .left,
+.container .right {
+  padding: 20px;
+  width: 50%;
+}
+
+.container .right h2 {
+  text-align: center;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formulario label {
+  font-size: 18px;
+  width: 100%;
+}
+
+.formulario .area {
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 17px;
+  min-height: 150px;
+  max-height: 150px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px;
+}
+
+.formulario .area:focus {
+    outline: none;
+    border: 2px solid #5c2a9d;
+}
+
+.formulario .boton {
+  margin: 20px 0;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 7px;
+  background-color: #5c2a9d;
+}
+
+.right .agregados {
+    text-transform: capitalize;
+
+}
+.right .agregados li {
+    list-style: circle;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.right .agregados li a {
+    text-align: right;
+    color: #5c2a9d;
+}
+.right .agregados li a:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px){
+.separadores{ 
+    flex-wrap: wrap;
+}
+    .separadores .left,
+    .container .right {
+      padding: 10px;
+      width: 100%;
+    }
+    
+}
